@@ -6,79 +6,6 @@
 	},
 	"item": [
 		{
-			"name": "Create user",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "e9693a5e-2f0e-4997-a0dc-67f92da182e7",
-						"exec": [
-							"pm.test(\"Status code is 201\", function () {\r",
-							"    pm.response.to.have.status(201);\r",
-							"});\r",
-							"\r",
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"protocolProfileBehavior": {
-				"disabledSystemHeaders": {
-					"content-type": true
-				}
-			},
-			"request": {
-				"auth": {
-					"type": "noauth"
-				},
-				"method": "POST",
-				"header": [
-					{
-						"key": "access-control-allow-origin",
-						"value": "*",
-						"type": "text",
-						"disabled": true
-					},
-					{
-						"key": "content-length",
-						"value": "107",
-						"type": "text",
-						"disabled": true
-					},
-					{
-						"key": "content-type",
-						"value": "application/json; charset=utf-8",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"Login\": \"tanyalukichevafff\",\r\n  \"NativeName\": \"Tanya Lukicheva\",\r\n  \"Password\": \"nfyz954184\",\r\n  \"ConfirmPassword\": \"nfyz954184\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://104.40.150.146/api/user",
-					"protocol": "http",
-					"host": [
-						"104",
-						"40",
-						"150",
-						"146"
-					],
-					"path": [
-						"api",
-						"user"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "Get information about current user",
 			"event": [
 				{
@@ -511,80 +438,6 @@
 				}
 			},
 			"response": []
-		},
-		{
-			"name": "Get all maps (maps)",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "6ff9ccee-f997-4638-9be3-fe2fd9f81a32",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://104.40.150.146/api/maps",
-					"protocol": "http",
-					"host": [
-						"104",
-						"40",
-						"150",
-						"146"
-					],
-					"path": [
-						"api",
-						"maps"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get all maps by user id",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "39c23047-e076-41f5-90e1-9d939a7bf603",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://104.40.150.146/api/user/379ca9b9875c4b6daa2e93ffba4f582f/maps",
-					"protocol": "http",
-					"host": [
-						"104",
-						"40",
-						"150",
-						"146"
-					],
-					"path": [
-						"api",
-						"user",
-						"379ca9b9875c4b6daa2e93ffba4f582f",
-						"maps"
-					]
-				}
-			},
-			"response": []
 		}
 	],
 	"auth": {
@@ -592,7 +445,7 @@
 		"bearer": [
 			{
 				"key": "token",
-				"value": "AQAAANCMnd8BFdERjHoAwE_Cl-sBAAAAAZ-KQx9Y8kGFX7ItjR4uNgAAAAACAAAAAAAQZgAAAAEAACAAAACwpm9z14KqYdv_DGeixVGqOEx0ghmF5LRI_XRNv5WPVQAAAAAOgAAAAAIAACAAAADU4Sk_ws4x9_JCSLwu03GLyMPuO2A39sC0AKnbK7L2ERABAABHuMvld7jYGyr8Pfl1MNpEZjbuZzd2a9vpO5GDGFrH7UhyoyKJEJLpwEstTDsv3z-bHJ7iM1OYOir0x3eu5U2vYzzwehuWD0uM5X100MAYuUMcj_t682u3YOC1uYj-zcBeaSiWl71aGDqU2MAdHXPnGVHdIkQtvhU0Hz6M_W81US0_oBReqL9j3b88ily5l3T6HgRKndO7LCLH3WgSOCjwbYy6GN6ZI0YcQVPjVlz8U7vu2ZQEOj1fekEQ4y3UYxIhINzakfeXswG24SBjG0BgvTXvMit4_wvTCO5NLwPwxhFheRyO78PmYCawOR4y6f9rHfEKru_TqAgYu4Az-0MD8rzrmf4-jS7A7sfJAC27skAAAADrTOKRrIO1eRmg2qzlUoYj0jlYnD-RbJP47a4NWLzJd0E1Jq8V7hdK0ecuqSR0PfN0zCXT39gpADTiNtIRF3aX",
+				"value": "AQAAANCMnd8BFdERjHoAwE_Cl-sBAAAAAZ-KQx9Y8kGFX7ItjR4uNgAAAAACAAAAAAAQZgAAAAEAACAAAAAQ_aHtuEY3ALxeRTcxqBTWl0gz-06EdfiehRmfVU5-FQAAAAAOgAAAAAIAACAAAAAOtN5MeRngPcniLGFSjpthAbvQNO30emzXfcpb8TBYhhABAABrIfNAZAAcCHSR8-9ueRay9mS1gaQx4dLxo7pz8gvXGOHRdOIamCCYNm8uCAGqMLV0Te6a0lADjA_V6Icmja30xSV4YYX3Ur8whWBjvm1rGrbB8psHQmXl63VraBeIAxepivESlZb9_k9O7gs82LFNVJlNOAza3ho9g_KL5qSippNCSnnVy2wuczOw3h3mLheMVIvOHgsqZcs-2yIKGSGAmjFFQcF5N1wizyPC4QLMV6KRjoY489v3V9j88vZgmHh-yRZK2cxyWdrgdYqQ8R7OLs7Es5FxyTmaMG9yyGJzlK90-Nl0H9W6o3VhK7pTSeTDTsS7CH6IzhnWHmP1KPMyXZg-sotiWC8wEp7Hs_RFC0AAAABWGzxmuoWYLdZ4MgH67Aherkgp7njLdgfL2c_UKYTNQNJMGFks8y6jM0BqNCNmQsXrBYTrFhgA1m0ckYeM_nSX",
 				"type": "string"
 			}
 		]
