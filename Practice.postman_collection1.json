@@ -13,8 +13,8 @@
 					"script": {
 						"id": "e9693a5e-2f0e-4997-a0dc-67f92da182e7",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
 							"});\r",
 							"\r",
 							""
@@ -54,7 +54,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"Login\": \"tanyalukicheva9999\",\r\n  \"NativeName\": \"Tanya Lukicheva\",\r\n  \"Password\": \"nfyz954184\",\r\n  \"ConfirmPassword\": \"nfyz954184\"\r\n}",
+					"raw": "{\r\n  \"Login\": \"tanyalukichevafff\",\r\n  \"NativeName\": \"Tanya Lukicheva\",\r\n  \"Password\": \"nfyz954184\",\r\n  \"ConfirmPassword\": \"nfyz954184\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
